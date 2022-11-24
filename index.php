@@ -27,17 +27,17 @@ Il secondo file riceverà la richiesta ed eseguirà queste operazioni:
 
         <!-- FORM -->
         <section class="form">
-            <form action="" method="">
+            <form action="result.php" method="GET">
                 <hr>
                 <!-- PARAGRAPH -->
                 <label for="paragraph">Write some text</label>    
-                <input type="text" id="paragraph">     
+                <input type="text" id="paragraph" name="paragraph">     
 
                 <hr>     
 
                 <!-- BADWORD -->
                 <label for="badword">Type your badword</label>
-                <input type="text" id="badword">
+                <input type="text" id="badword" name="badword">
 
                 <!-- BUTTON -->
                 <hr>
