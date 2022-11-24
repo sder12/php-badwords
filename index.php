@@ -17,15 +17,33 @@ Il secondo file riceverà la richiesta ed eseguirà queste operazioni:
 <body>
     <div class="container">
         <!-- TITLE -->
-        <div class="title">
+        <section class="title">
             <h1>FORM PHP</h1>
             <span>
                 <?php echo "php debug subtitle"?>
             </span>
-        </div>
-
+           
+        </section>
 
         <!-- FORM -->
+        <section class="form">
+            <form action="" method="">
+                <hr>
+                <!-- PARAGRAPH -->
+                <label for="paragraph">Write some text</label>    
+                <input type="text" id="paragraph">     
+
+                <hr>     
+
+                <!-- BADWORD -->
+                <label for="badword">Type your badword</label>
+                <input type="text" id="badword">
+
+                <!-- BUTTON -->
+                <hr>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
 
     </div>
 </body>

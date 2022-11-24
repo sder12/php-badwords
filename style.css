@@ -16,3 +16,7 @@ html {
 .title {
     text-align: center;
 }
+
+section {
+    padding: 1em 2em;
+}
