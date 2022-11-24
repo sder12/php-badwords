@@ -15,22 +15,24 @@
 <body>
     <div class="container">
     
-        <section>
-           
-        <h3>
-            <?php echo $myparagraph; ?>
-        </h3>
-
-        <h3>
-            <?php echo $mybadword; ?>
-        </h3>
-
-       
-        <!-- back to index -->
-        <hr>
-        <a href="index.php"> back to homepage</a>
-        
+        <section>    
+            <h3> Text without censure: </h3>       
+            <p> <?php echo $myparagraph; ?> </p>
+            <h4> Paragraph's length: <?php echo strlen($myparagraph); ?> </h4>   
+            <h4> Censored word: <?php echo $mybadword; ?> </h4>      
         </section>
+        <hr>
+
+        <section>        
+            <h3> Censored text: </h3>      
+            <p> <?php echo str_replace($mybadword, "***", $myparagraph) ?> </p>           
+        </section>
+
+        <hr>
+        
+        <section>      
+            <a href="index.php"> back to homepage</a>
+        </section>  
 
     </div>
 </body>
